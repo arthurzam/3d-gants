@@ -1,0 +1,174 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>MainWindow</class>
+ <widget class="QMainWindow" name="MainWindow">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>636</width>
+    <height>467</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>MainWindow</string>
+  </property>
+  <widget class="QWidget" name="centralWidget">
+   <layout class="QVBoxLayout" name="verticalLayout_2">
+    <item>
+     <layout class="QHBoxLayout" name="panel_menu">
+      <item>
+       <layout class="QVBoxLayout" name="panel_view">
+        <item>
+         <widget class="QToolButton" name="bt_view_front">
+          <property name="text">
+           <string>Front</string>
+          </property>
+          <property name="icon">
+           <iconset resource="icons/icons.qrc">
+            <normaloff>:/icons/CubeRight.png</normaloff>:/icons/CubeRight.png</iconset>
+          </property>
+          <property name="toolButtonStyle">
+           <enum>Qt::ToolButtonTextBesideIcon</enum>
+          </property>
+         </widget>
+        </item>
+        <item>
+         <widget class="QToolButton" name="bt_view_top">
+          <property name="text">
+           <string>Top</string>
+          </property>
+          <property name="icon">
+           <iconset resource="icons/icons.qrc">
+            <normaloff>:/icons/CubeTop.png</normaloff>:/icons/CubeTop.png</iconset>
+          </property>
+          <property name="toolButtonStyle">
+           <enum>Qt::ToolButtonTextBesideIcon</enum>
+          </property>
+         </widget>
+        </item>
+        <item>
+         <widget class="QToolButton" name="bt_view_right">
+          <property name="text">
+           <string>Right</string>
+          </property>
+          <property name="icon">
+           <iconset resource="icons/icons.qrc">
+            <normaloff>:/icons/CubeFront.png</normaloff>:/icons/CubeFront.png</iconset>
+          </property>
+          <property name="toolButtonStyle">
+           <enum>Qt::ToolButtonTextBesideIcon</enum>
+          </property>
+         </widget>
+        </item>
+       </layout>
+      </item>
+      <item>
+       <layout class="QVBoxLayout" name="panel_zoom">
+        <item>
+         <widget class="QToolButton" name="bt_zoom_in">
+          <property name="text">
+           <string>Zoom In</string>
+          </property>
+          <property name="icon">
+           <iconset resource="icons/icons.qrc">
+            <normaloff>:/icons/ZoomIn.png</normaloff>:/icons/ZoomIn.png</iconset>
+          </property>
+          <property name="toolButtonStyle">
+           <enum>Qt::ToolButtonTextBesideIcon</enum>
+          </property>
+         </widget>
+        </item>
+        <item>
+         <widget class="QToolButton" name="bt_zoom_out">
+          <property name="text">
+           <string>Zoom Out</string>
+          </property>
+          <property name="icon">
+           <iconset resource="icons/icons.qrc">
+            <normaloff>:/icons/ZoomOut.png</normaloff>:/icons/ZoomOut.png</iconset>
+          </property>
+          <property name="toolButtonStyle">
+           <enum>Qt::ToolButtonTextBesideIcon</enum>
+          </property>
+         </widget>
+        </item>
+        <item>
+         <widget class="QToolButton" name="bt_zoom_100">
+          <property name="text">
+           <string>Zoom</string>
+          </property>
+          <property name="icon">
+           <iconset resource="icons/icons.qrc">
+            <normaloff>:/icons/Zoom100.png</normaloff>:/icons/Zoom100.png</iconset>
+          </property>
+          <property name="toolButtonStyle">
+           <enum>Qt::ToolButtonTextBesideIcon</enum>
+          </property>
+         </widget>
+        </item>
+       </layout>
+      </item>
+     </layout>
+    </item>
+    <item>
+     <layout class="QHBoxLayout" name="panel_timeline"/>
+    </item>
+    <item>
+     <widget class="QSplitter" name="splitter">
+      <property name="orientation">
+       <enum>Qt::Horizontal</enum>
+      </property>
+      <widget class="QWidget" name="verticalLayoutWidget">
+       <layout class="QVBoxLayout" name="verticalLayout">
+        <item>
+         <widget class="QTableView" name="tableView"/>
+        </item>
+        <item>
+         <layout class="QHBoxLayout" name="horizontalLayout_3">
+          <item>
+           <widget class="QPushButton" name="bt_draw_selected">
+            <property name="text">
+             <string>Draw
+Selected</string>
+            </property>
+           </widget>
+          </item>
+          <item>
+           <widget class="QPushButton" name="bt_draw_project">
+            <property name="text">
+             <string>Draw
+Project</string>
+            </property>
+           </widget>
+          </item>
+          <item>
+           <widget class="QPushButton" name="bt_draw_reset">
+            <property name="text">
+             <string>Reset</string>
+            </property>
+           </widget>
+          </item>
+         </layout>
+        </item>
+        <item>
+         <widget class="QGroupBox" name="panel_info">
+          <property name="title">
+           <string>GroupBox</string>
+          </property>
+         </widget>
+        </item>
+       </layout>
+      </widget>
+      <widget class="QOpenGLWidget" name="openGLWidget"/>
+     </widget>
+    </item>
+   </layout>
+  </widget>
+ </widget>
+ <layoutdefault spacing="6" margin="11"/>
+ <resources>
+  <include location="icons/icons.qrc"/>
+ </resources>
+ <connections/>
+</ui>

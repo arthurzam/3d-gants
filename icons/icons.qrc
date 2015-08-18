@@ -1,0 +1,22 @@
+<RCC>
+    <qresource prefix="/icons">
+        <file>about.png</file>
+        <file>arrow-up.png</file>
+        <file>arrow-up1.png</file>
+        <file>color_change.png</file>
+        <file>CubeFront.png</file>
+        <file>CubeFront32.png</file>
+        <file>CubeRight.png</file>
+        <file>CubeTop.png</file>
+        <file>exit.png</file>
+        <file>help.png</file>
+        <file>icons.qrc</file>
+        <file>move_off.png</file>
+        <file>open.png</file>
+        <file>rotate_off.png</file>
+        <file>save_image.png</file>
+        <file>Zoom100.png</file>
+        <file>ZoomIn.png</file>
+        <file>ZoomOut.png</file>
+    </qresource>
+</RCC>

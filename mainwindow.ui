@@ -112,7 +112,21 @@
      </layout>
     </item>
     <item>
-     <layout class="QHBoxLayout" name="panel_timeline"/>
+     <layout class="QHBoxLayout" name="panel_timeline">
+      <item>
+       <widget class="QxtSpanSlider" name="horizontalSlider">
+        <property name="orientation">
+         <enum>Qt::Horizontal</enum>
+        </property>
+        <property name="tickPosition">
+         <enum>QSlider::TicksBelow</enum>
+        </property>
+        <property name="tickInterval">
+         <number>5</number>
+        </property>
+       </widget>
+      </item>
+     </layout>
     </item>
     <item>
      <widget class="QSplitter" name="splitter">
@@ -156,6 +170,12 @@ Project</string>
           <property name="title">
            <string>GroupBox</string>
           </property>
+          <property name="flat">
+           <bool>false</bool>
+          </property>
+          <property name="checkable">
+           <bool>false</bool>
+          </property>
          </widget>
         </item>
        </layout>
@@ -167,6 +187,13 @@ Project</string>
   </widget>
  </widget>
  <layoutdefault spacing="6" margin="11"/>
+ <customwidgets>
+  <customwidget>
+   <class>QxtSpanSlider</class>
+   <extends>QSlider</extends>
+   <header>qxtspanslider.h</header>
+  </customwidget>
+ </customwidgets>
  <resources>
   <include location="icons/icons.qrc"/>
  </resources>
